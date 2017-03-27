@@ -77,7 +77,6 @@ class Crimes extends Component {
                         >City: {c.city}<br /> 
                         >Crime: {c.crime}<br />
                         >Informer Mobile: {c.informerMobile}<br />
-                        {/*<mui.RaisedButton type="submit" label="Request Blood" secondary={true} />*/}
                         </Paper>                     
                      </div>
   )

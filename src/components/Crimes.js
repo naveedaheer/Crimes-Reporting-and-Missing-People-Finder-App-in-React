@@ -32,7 +32,7 @@ class Crimes extends Component {
          this.onSearch = this.onSearch.bind(this)
     }
     
-    //working code
+
      onSearch(e) {
         let _self = this;
         e.preventDefault()
@@ -57,24 +57,6 @@ class Crimes extends Component {
             })
         });
   }
-
-
-    // componentWillMount(){
-    //     var crimes = [];
-    //     firebase.database().ref('/crimeList/').on('value', (data) => {
-    //         let obj = data.val();
-
-    //         for(var prop in obj){
-    //             crimes.push(obj[prop].crime);
-               
-    //             this.setState({
-    //                 crimeList: crimes
-    //             })
-    //              console.log(this.state.crimeList);
-    //         }
-
-    //     })
-    // }
     
     render() {
         return (

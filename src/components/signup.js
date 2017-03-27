@@ -61,12 +61,12 @@ class Register extends Component {
 Register.contextTypes = {
     router: React.PropTypes.object.isRequired
 }
-const mapStateToProps = (state) => { // mapStateToProps ye iska apna function he
+const mapStateToProps = (state) => { 
     return {
         authReducer: state
     }
 }
-const mapDispatchToProps = (dispatch) => { // mapDispatchToProps ye iska apna function he
+const mapDispatchToProps = (dispatch) => { 
     return {
         signUp: (data) => {
             dispatch(signUp(data))

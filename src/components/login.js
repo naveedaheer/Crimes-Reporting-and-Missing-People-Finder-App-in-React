@@ -50,13 +50,13 @@ class Login extends Component {
 Login.contextTypes = {
     router: React.PropTypes.object.isRequired
 }
-// export default Login;
-const mapStateToProps = (state) => { // mapStateToProps ye iska apna function he
+
+const mapStateToProps = (state) => { 
     return {
         authReducer: state
     }
 }
-const mapDispatchToProps = (dispatch) => { // mapDispatchToProps ye iska apna function he
+const mapDispatchToProps = (dispatch) => { 
     return {
         signInUser: (data) => {
             dispatch(signIn(data))

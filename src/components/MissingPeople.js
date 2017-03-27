@@ -62,23 +62,6 @@ class MissingPeopleList extends Component {
         });
   }
 
-    // componentWillMount(){
-    //     var missingPeople = [];
-    //     firebase.database().ref('/missingPeople/').on('value', (data) => {
-    //         let obj = data.val();
-
-    //         for(var prop in obj){
-    //             missingPeople.push(obj[prop].missingPerson);
-               
-    //             this.setState({
-    //                 missingPeopleList: missingPeople
-    //             })
-    //              console.log(this.state.missingPeopleList);
-    //         }
-
-    //     })
-    // }
-    
     render() {
         return (
             <div > 
@@ -124,7 +107,6 @@ class MissingPeopleList extends Component {
                         >Details: {m.missingDetails}<br />
                         >Informer Name: {m.informerName}<br />
                         >Informer Mobile: {m.informerMobile}<br />
-                        {/*<mui.RaisedButton type="submit" label="Request Blood" secondary={true} />*/}
                         </Paper>                     
                      </div>
   )
